@@ -1,0 +1,260 @@
+@font-face
+  {
+  font-family: 'Playfair Display';
+  src: url("/fonts/Play/static/PlayfairDisplay-Bold.ttf");
+  }
+
+h1{
+    font-family: 'Caveat';
+}
+
+.courses{
+    background-color: #F9D3D3;
+    
+    height:100%;
+    display: block;
+    max-width:1700px;
+    line-height:1;
+    font-size:14px;
+    -ms-text-size-adjust:100%;
+    -moz-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+}
+
+
+
+.header {
+    width: 100%;
+    background-color: #9D9292;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index:10;
+    opacity: 80%;
+    height: 56px;
+}
+
+.logo{
+    width: 200px;
+    height: 50px;
+}
+
+.wrapper {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+
+.header_wrapper{
+    width: 1700px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.header_list {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.header_item {
+    margin-right: 20px;
+}
+.header_item:last-child{
+    margin-right: 50px;
+}
+.header_link {
+    color: #63433E;
+    font-family: Playfair Display, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+.header_link:hover, .header_link:focus, .header_link:active{
+    opacity: .70;
+}
+
+.main_container{
+    color: #63433E;
+    display: block;
+    width: 1170px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.title{
+    max-width: 75em;
+    margin-top: 100px;
+    color: #63433E;
+    text-align: center;
+    font-family: 'Caveat';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 3em;   
+}
+
+
+
+.info__course1{
+    font-size: 24px;
+    width: 700px;
+    visibility: hidden;
+    padding-left: 10em;
+}
+
+
+.courses__1:hover .info__course1{
+    animation: anim 1s forwards;
+    visibility: visible;
+}
+
+dl{
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes anim {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+dt{
+    font-size: 28px;
+    padding: 10px;
+}
+dt::first-letter{
+    font-style: italic;
+    font-size: 80px;
+    color: #eb8698;
+}
+
+.my__photo{
+    position: absolute;
+    left: 60em;
+    width: 31.25em;
+    height: 43.75em;
+    border-radius: 20px;
+    opacity: 80%;
+}
+.description{
+    color: #63433E;
+    font-style: italic;
+    position: absolute;
+    width: 30em;
+}
+
+.course__content{
+    padding-top: 5.5em;
+    
+}
+.course__content::first-letter{
+    font-style: italic;
+    font-size: 80px;
+    color: #eb8698;
+}
+
+.photo_course1{
+    width: 31.25em;
+    height: 43.75em;
+    border-radius: 20px;
+    margin-left: 35em;
+    opacity: 0.9;
+    transition: opacity 0.5s ease;
+    
+}
+.photo_course1:hover{
+    opacity: 0.5;
+}
+
+.count__lections{
+    
+    color: #843b30;
+    text-shadow: rgb(144, 37, 137) 1px 0 6px;
+    width: 1000px;
+    position: absolute;
+    line-height: 1.5;
+    top: 70em;
+}
+
+.desc{
+    margin-top: 0.5em;
+}
+
+.price__course{
+    
+    font-family: 'Caveat';
+    font-size: 18px;
+    margin-top: 4em;
+    margin-bottom: 7em;
+    margin-left: 5em;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 5px;
+    background: rgb(144, 37, 137);
+    box-shadow: 0 0px rgb(144, 37, 137) inset;
+    transition: .1s ease;
+    
+}
+.price__course:hover { 
+    background: rgb(5, 1, 5); 
+}
+.price__course:active {
+    background: rgb(144, 37, 137);
+    box-shadow: 0 0px rgb(0, 0, 0) inset;
+}
+
+
+
+
+
+
+
+.footer{
+    display: block;
+    height: 40%;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 1);
+    left: 0;
+    padding-bottom: 0;
+    width: 100%;
+    font-size: 19px;
+    color: #fafaff;
+    flex-flow: row nowrap;
+}
+.footer:hover{
+    opacity: 90%;
+}
+
+.footer__title{
+    padding: 30px 0 0 0;
+    text-align: center;
+}
+
+.tiny__icon{
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+    
+}
+
+.block__link{
+    
+    margin-top: 50px;
+    margin-left: 25em;
+    
+    
+}
+
+.footer__link{
+    text-decoration: none;
+}
