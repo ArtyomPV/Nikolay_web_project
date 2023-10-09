@@ -1,0 +1,126 @@
+.containerA {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #F9D3D3;
+    font-size: 25px;
+}
+h1, h2, h3, h4 {
+    font-family: 'Caveat';
+    color: #843b30;
+}
+
+.about{
+margin: 80px;
+
+    background-image: url("../icon/IMG_3136.PNG");
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    background-size: contain;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+.about_title h1{
+    font-family: 'Caveat';
+    font-size: 20px;
+ }
+.about_header h2{
+
+    font-size: 40px;
+}
+
+.about_items{}
+.items{}
+.items_header h2{
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    color: #63433E;
+    margin-left: 130px;
+}
+.items_block{
+    max-width: 1000px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.items_logo{
+    margin: auto 0;
+}
+.items_content{
+    margin-left: 50px;
+
+}
+@media (max-width: 900px){
+    .items_block{
+        display: flex;
+        flex-direction: column;
+    }
+    .items_logo{
+        margin: 0 auto;
+    }
+    .about {
+        background-image: none;
+    }
+    .items_header h2{
+        margin-left: 0;
+    }
+
+}
+@media (max-width: 650px){
+    .tabs__item span{
+        display: block;
+        width: 100px;
+        padding: 0px 5px;
+        white-space: nowrap;
+        text-align: center;
+        overflow: hidden;
+        /*font-style: 14px;*/
+        text-overflow: ellipsis;
+    }
+    .header_wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .items_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about{
+        margin: 10px;
+        margin-top: 150px;
+
+    }
+    .about_header h2{
+
+        font-size: 30px;
+    }
+    .containerA {
+        font-size: 20px;
+    }
+    .items_header h2{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 430px){
+    .header_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+    .about{
+        margin-top: 220px;
+    }
+    .about_header h2{
+
+        font-size: 20px;
+    }
+    .containerA {
+        font-size: 12px;
+    }
+}

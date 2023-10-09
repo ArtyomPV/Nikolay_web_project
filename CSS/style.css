@@ -4,7 +4,7 @@
   src: url("/fonts/Play/static/PlayfairDisplay-Bold.ttf");
   }
 .main{
-    min-width: 1440px;
+    /*max-width: 1440px;*/
     background-color: #F9D3D3;
     margin: 0;
     
@@ -90,8 +90,8 @@
     transform: scale(1,1);
 }
 .main_header{
-    position: absolute;
-    width: 1440px;
+
+
     margin-top: 80px;
     margin-left: 50px;
     color: #843b30;
@@ -107,7 +107,7 @@
     font-size: 20px;
 }
 .main_description{
-    position: absolute;
+    /*position: absolute;*/
     right: 50px;
     display: flex;
     color: #63433E;
@@ -121,6 +121,13 @@
     letter-spacing: normal;
     margin-top: 80px;
 }
+.bg-image{
+    background-image: url("../icon/IMG_3136.PNG");
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    background-size: contain;
+    background-position-x: right;
+}
 .mainphoto{
     position:relative;
     width: 900px;
@@ -129,8 +136,8 @@
     right: -500px;
 }
 .text{
-    position: absolute;
-    width: 1194px;
+    /*position: absolute;*/
+    max-widthwidth: 1194px;
     font-family: 'Playfair Display';
     margin-right: 196px;
     font-size: 40px;
@@ -163,13 +170,30 @@
     width: 908px;
     height: 132px;
 }
+.items_header{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+.item{
+    width: 1194px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.item-logo{
+    margin: auto 0;
+}
+.item-content{
+    margin-left: 50px;
+    color: #63433E;
+    font-size: 25px;
+}
 .baby{
-    position: absolute;
     width: 84px;
     height: 84px;
-    flex-shrink: 0;
-    top: 515px;
-    left: 50px;
 }
 .textaboutbaby{
     border-radius: 10px;
@@ -483,18 +507,6 @@
     line-height: 24px;
 }
 
-@media (max-width: 600px){
-    .tabs__item span{
-        display: block;
-        width: 100px;
-        padding: 0px 5px;
-        white-space: nowrap;
-        text-align: center;
-        overflow: hidden;
-        font-style: 14px;
-        text-overflow: ellipsis;
-    }
-}
 
 .tabs__item:hover:nth-child(1){
     background-color: #eb8698;
